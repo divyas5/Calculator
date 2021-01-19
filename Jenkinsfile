@@ -9,8 +9,8 @@ pipeline {
               }
             
        steps {
-                sh 'python -m py_compile myscript.py'
-           stash(name: 'compiled-results', includes: '*.py*')
+                sh 'python myscript.py'
+   
             }
             
         }
