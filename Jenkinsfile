@@ -4,8 +4,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'dockerfile running'
-			          docker build -t testing .
-				        docker run testing:latest
+		docker build -t testing .
+	        docker run testing:latest
             }
         }
     }
