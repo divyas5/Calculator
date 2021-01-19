@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'echo check'
                 sh 'python --version'
+                sh 'python myscript.py'
             }
         }
     }
